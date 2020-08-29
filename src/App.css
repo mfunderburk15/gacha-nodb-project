@@ -1,0 +1,20 @@
+.header{
+    position: fixed;
+    width: 100vw;
+    height: 11vh;
+    background-color: #3e2713c4;
+    display: flex;
+    align-items: center;
+}
+
+.header > h1{
+    height: 100%;
+    width: 20vw;
+    background-color: #ffe600;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:  sans-serif;
+    font-weight: bold;
+}

@@ -1,257 +1,290 @@
 [
     {
-        "id": 0,
+        "id": 1,
         "rating": 5,
         "name": "Claymore",
         "price": 10000,
-        "durability": 5,
+        "durability": 100,
+        "max": 100,
         "img": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_123.jpg"
-    },
-    {
-        "id": 1,
-        "rating": 5,
-        "name": "Staff",
-        "price": 10000,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_16.jpg"
     },
     {
         "id": 2,
         "rating": 5,
-        "name": "Musket",
+        "name": "Staff",
         "price": 10000,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_musket_04.jpg"
+        "durability": 100,
+        "max": 100,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_16.jpg"
     },
     {
         "id": 3,
-        "rating": 4,
-        "name": "Chain Leggings",
-        "price": 500,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_03.jpg"
+        "rating": 5,
+        "name": "Musket",
+        "price": 10000,
+        "durability": 100,
+        "max": 100,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_musket_04.jpg"
     },
     {
         "id": 4,
         "rating": 4,
-        "name": "Boots",
+        "name": "Chain Leggings",
         "price": 500,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_desecrated_plateboots.jpg"
+        "durability": 50,
+        "max": 50,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_03.jpg"
     },
     {
         "id": 5,
         "rating": 4,
-        "name": "Armor",
+        "name": "Boots",
         "price": 500,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/garrison_greenarmor.jpg"
+        "durability": 50,
+        "max": 50,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_desecrated_plateboots.jpg"
     },
     {
         "id": 6,
         "rating": 4,
-        "name": "Helmet",
+        "name": "Armor",
         "price": 500,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_03.jpg"
+        "durability": 50,
+        "max": 50,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/garrison_greenarmor.jpg"
     },
     {
         "id": 7,
         "rating": 4,
-        "name": "Wand",
+        "name": "Helmet",
         "price": 500,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_wand_02.jpg"
+        "durability": 50,
+        "max": 50,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_03.jpg"
     },
     {
         "id": 8,
         "rating": 4,
-        "name": "Axe",
+        "name": "Wand",
         "price": 500,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_throwingaxe_01.jpg"
+        "durability": 50,
+        "max": 50,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_wand_02.jpg"
     },
     {
         "id": 9,
         "rating": 4,
-        "name": "Mace",
+        "name": "Axe",
         "price": 500,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_mace_15.jpg"
+        "durability": 50,
+        "max": 50,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_throwingaxe_01.jpg"
     },
     {
         "id": 10,
         "rating": 4,
-        "name": "Crossbow",
+        "name": "Mace",
         "price": 500,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_weapon_crossbow_01.jpg"
+        "durability": 50,
+        "max": 50,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_mace_15.jpg"
     },
     {
         "id": 11,
         "rating": 4,
-        "name": "Sword",
+        "name": "Crossbow",
         "price": 500,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_04.jpg"
+        "durability": 50,
+        "max": 50,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_weapon_crossbow_01.jpg"
     },
     {
         "id": 12,
-        "rating": 3,
-        "name": "Shoes",
-        "price": 25,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_boots_leather_raiddruid_q_01.jpg"
+        "rating": 4,
+        "name": "Sword",
+        "price": 500,
+        "durability": 50,
+        "max": 50,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_04.jpg"
     },
     {
         "id": 13,
         "rating": 3,
-        "name": "Hat",
+        "name": "Shoes",
         "price": 25,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_50.jpg"
+        "durability": 10,
+        "max": 10,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_boots_leather_raiddruid_q_01.jpg"
     },
     {
         "id": 14,
         "rating": 3,
-        "name": "Pants",
+        "name": "Hat",
         "price": 25,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_11.jpg"
+        "durability": 10,
+        "max": 10,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_50.jpg"
     },
     {
         "id": 15,
         "rating": 3,
-        "name": "Shirt",
+        "name": "Pants",
         "price": 25,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_shirt02_plain.jpg"
+        "durability": 10,
+        "max": 10,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_pants_11.jpg"
     },
     {
         "id": 16,
         "rating": 3,
-        "name": "Book",
+        "name": "Shirt",
         "price": 25,
-        "durability": 5
+        "durability": 10,
+        "max": 10,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_shirt02_plain.jpg"
     },
     {
         "id": 17,
         "rating": 3,
-        "name": "Mallet",
+        "name": "Book",
         "price": 25,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_1h_orcclansmallet_a_01.jpg"
+        "durability": 10,
+        "max": 10,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_book_11.jpg"
     },
     {
         "id": 18,
         "rating": 3,
-        "name": "Stone Axe",
+        "name": "Mallet",
         "price": 25,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_axe_19.jpg"
+        "durability": 10,
+        "max": 10,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_1h_orcclansmallet_a_01.jpg"
     },
     {
         "id": 19,
         "rating": 3,
-        "name": "Club",
+        "name": "Stone Axe",
         "price": 25,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_mace_10.jpg"
+        "durability": 10,
+        "max": 10,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_axe_19.jpg"
     },
     {
         "id": 20,
         "rating": 3,
-        "name": "Bow",
+        "name": "Club",
         "price": 25,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_weapon_bow_07.jpg"
+        "durability": 10,
+        "max": 10,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_mace_10.jpg"
     },
     {
         "id": 21,
         "rating": 3,
-        "name": "Wood Sword",
+        "name": "Bow",
         "price": 25,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_45.jpg"
+        "durability": 10,
+        "max": 10,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_weapon_bow_07.jpg"
     },
     {
         "id": 22,
-        "rating": 2,
-        "name": "Cheese",
-        "price": 1,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_food_100_hardcheese.jpg"
+        "rating": 3,
+        "name": "Wood Sword",
+        "price": 25,
+        "durability": 10,
+        "max": 10,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_sword_45.jpg"
     },
     {
         "id": 23,
         "rating": 2,
-        "name": "Banana",
+        "name": "Cheese",
         "price": 1,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_food_24.jpg"
+        "durability": 1,
+        "max": 1,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_food_100_hardcheese.jpg"
     },
     {
         "id": 24,
         "rating": 2,
-        "name": "Steak",
+        "name": "Banana",
         "price": 1,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_food_cooked_tigersteak.jpg"
+        "durability": 1,
+        "max": 1,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_food_24.jpg"
     },
     {
         "id": 25,
         "rating": 2,
+        "name": "Steak",
+        "price": 1,
+        "durability": 1,
+        "max": 1,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_food_cooked_tigersteak.jpg"
+    },
+    {
+        "id": 26,
+        "rating": 2,
         "name": "Cabbage",
         "price": 1,
-        "durability": 5,
+        "durability": 1,
+        "max": 1,
         "img": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_food_vendor_greencabbage.jpg"
-    },
-    {
-        "id": 26,
-        "rating": 2,
-        "name": "Turkey",
-        "price": 1,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_food_18.jpg"
-    },
-    {
-        "id": 26,
-        "rating": 2,
-        "name": "Soup",
-        "price": 1,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_food_vendor_roastedbarlytea.jpg"
     },
     {
         "id": 27,
         "rating": 2,
-        "name": "Milk",
+        "name": "Turkey",
         "price": 1,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_drink_milk_01.jpg"
+        "durability": 1,
+        "max": 1,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_food_18.jpg"
     },
     {
         "id": 28,
         "rating": 2,
-        "name": "Beer",
+        "name": "Soup",
         "price": 1,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_holiday_beerfest_highmountain.jpg"
+        "durability": 1,
+        "max": 1,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_food_vendor_roastedbarlytea.jpg"
     },
     {
         "id": 29,
         "rating": 2,
-        "name": "Juice",
+        "name": "Milk",
         "price": 1,
-        "durability": 5,
-        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_drink_02.jpg"
+        "durability": 1,
+        "max": 1,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_drink_milk_01.jpg"
     },
     {
         "id": 30,
         "rating": 2,
+        "name": "Beer",
+        "price": 1,
+        "durability": 1,
+        "max": 1,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_holiday_beerfest_highmountain.jpg"
+    },
+    {
+        "id": 31,
+        "rating": 2,
+        "name": "Juice",
+        "price": 1,
+        "durability": 1,
+        "max": 1,
+        "img": "https://wow.zamimg.com/images/wow/icons/large/inv_drink_02.jpg"
+    },
+    {
+        "id": 32,
+        "rating": 2,
         "name": "Water",
         "price": 1,
-        "durability": 5,
+        "durability": 1,
+        "max": 1,
         "img": "https://wow.zamimg.com/images/wow/icons/large/inv_drink_14.jpg"
     }
 ]

@@ -2,7 +2,7 @@ const loot = require('../data.json')
 const { request } = require('express')
 let bagId = 0
 
-const bag = { gold: 0, items: [] }
+const bag = { gold: 0, inventory: [] }
 
 const updateTotalGold = (num) => {
     bag.gold += num
@@ -15,7 +15,7 @@ module.exports = {
     addToBag: (request, response) => {
         const { id } = request.body
 
-        if (bag.items.length > 8) {
+        if (bag.inventory.length > 8) {
             return alert('Bag is full')
         } else {
             const treasure = loot.find((element) => element.id === id)
@@ -24,10 +24,10 @@ module.exports = {
 
             treasure.BagId = bagId
 
-            bag.items.push({ id, name, rating, durability, price, img })
+            bag.inventory.push({ id, name, rating, durability, price, img })
 
         }
-        bag.items.forEach((element, index) => {
+        bag.inventory.forEach((element, index) => {
             element.bagId = index + 1
         })
 
@@ -35,16 +35,16 @@ module.exports = {
     },
     useItem: (request, response) => {
         const { bag_id } = request.params
-        const index = bag.items.findIndex((element) => element.bagId === (+bag_id + 1))
-        console.log(bag.items.bagId)
+        const index = bag.inventory.findIndex((element) => element.bagId === (+bag_id + 1))
+        console.log(bag.inventory.bagId)
         if (index === -1) {
             return response.status(404).send('Item is not in bag')
         }
 
-        if (bag.items[index].durability > 1) {
-            bag.items[index].durability -= 1
+        if (bag.inventory[index].durability > 1) {
+            bag.inventory[index].durability -= 1
         } else {
-            bag.items.splice(index, 1)
+            bag.inventory.splice(index, 1)
         }
 
 
@@ -53,13 +53,13 @@ module.exports = {
     },
     sellItem: (request, response) => {
         const { bag_id } = request.params
-        const index = bag.items.findIndex((element) => element.bagId === (+bag_id + 1))
+        const index = bag.inventory.findIndex((element) => element.bagId === (+bag_id + 1))
 
         if (index === -1) {
             return response.status(404).send('Item is not in bag')
         }
-        updateTotalGold(bag.items[index].price)
-        bag.items.splice(index, 1)
+        updateTotalGold(bag.inventory[index].price)
+        bag.inventory.splice(index, 1)
 
 
         response.status(200).send(bag)

@@ -8,6 +8,8 @@ const Loot = (props) => {
                 loot={props.loot}
                 getLoot={props.getLoot}
                 addToBag={props.addToBag}
+                full={props.full}
+                fullBag={props.fullBag}
             />
         </section>
     )

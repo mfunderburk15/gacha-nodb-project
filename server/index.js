@@ -16,6 +16,7 @@ app.get('/api/bag', bagCtrl.getBag)
 app.post('/api/bag', bagCtrl.addToBag)
 app.put('/api/bag/:bag_id', bagCtrl.useItem)
 app.delete('/api/bag/:bag_id', bagCtrl.sellItem)
+app.delete('/api/bag', bagCtrl.sendToBank)
 
 
 app.listen(SERVER_PORT, () => { console.log(`This app is using server port: ${SERVER_PORT}`) })

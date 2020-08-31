@@ -2,6 +2,7 @@ import React from 'react'
 import Inventory from './Inventory'
 
 const Bag = (props) => {
+    console.log("inventory", props.bag)
     return (
         <section className="bag-container">
             <div className="bag">
@@ -17,6 +18,9 @@ const Bag = (props) => {
                 <div className='gold'>
                     Gold: {props.bag.gold}
                 </div>
+                <button onClick={() => props.sendToBank()} className='bank-button'>
+                    Deposit
+                </button>
             </div>
         </section>
     )

@@ -16,7 +16,9 @@ module.exports = {
         const { id } = request.body
 
         if (bag.inventory.length > 8) {
-            return alert('Bag is full')
+            return response.status(200).send({
+                bag: bag, message: "bag is full"
+            })
         } else {
             const treasure = loot.find((element) => element.id === id)
 
@@ -64,4 +66,11 @@ module.exports = {
 
         response.status(200).send(bag)
     },
+
+    sendToBank: (request, response) => {
+        bag.gold = 0
+        bag.inventory = []
+
+        response.status(200).send(bag)
+    }
 }

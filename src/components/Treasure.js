@@ -7,11 +7,6 @@ class Treasure extends Component {
         }
     }
 
-    handleAddToBag() {
-        this.props.addToBag(this.props.loot.id)
-        console.log("hit addToBAg")
-
-    }
 
 
     render() {
@@ -26,7 +21,16 @@ class Treasure extends Component {
                         </div>
                     </div>
                 </section>
+
                 <section className='treasure-bottom'>
+                    {
+                        this.props.full === false ? (<div className='alert-blank'></div>) :
+                            (<div className='alert'><h3>
+                                Bag is full
+                    </h3>
+                                <button className='i-know' onClick={() => this.props.fullBag()}>Okay</button>
+                            </div>)
+                    }
                     <img src="https://pngimg.com/uploads/treasure_chest/treasure_chest_PNG63.png" className="treasure-box" onClick={() => this.props.getLoot()} />
                 </section>
             </div >

@@ -27,6 +27,7 @@ class Display extends Component {
 
     getLoot() {
         Axios.get('/api/loot').then((response) => {
+            this.addToBag(response.data.id)
             this.setState({
                 loot: response.data,
             })

@@ -9,6 +9,7 @@ class Treasure extends Component {
 
     handleAddToBag() {
         this.props.addToBag(this.props.loot.id)
+        console.log("hit addToBAg")
 
     }
 
@@ -17,12 +18,16 @@ class Treasure extends Component {
         return (
             <div className='treasure'>
                 <section className='treasure-top'>
-                    <img className='treasure-img' src={this.props.loot.img} />
-                    <p className='treasure-name'>{this.props.loot.name}</p>
-                    <p className='treasure-price'>{this.props.loot.price}</p>
+                    <div className='treasure-div'>
+                        <img className='treasure-img' src={this.props.loot.img} />
+                        <div className="treasure-info">
+                            <p className='treasure-name'>{this.props.loot.name}</p>
+                            <p className='treasure-price'>Gold: {this.props.loot.price}</p>
+                        </div>
+                    </div>
                 </section>
                 <section className='treasure-bottom'>
-                    <img src="https://pngimg.com/uploads/treasure_chest/treasure_chest_PNG63.png" className="treasure-box" onClick={() => { this.props.getLoot(); this.handleAddToBag(); }} />
+                    <img src="https://pngimg.com/uploads/treasure_chest/treasure_chest_PNG63.png" className="treasure-box" onClick={() => this.props.getLoot()} />
                 </section>
             </div >
         )

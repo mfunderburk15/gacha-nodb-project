@@ -6,12 +6,13 @@
     background-color: #3e2713c4;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header > h1{
     height: 103%;
     width: 20vw;
-    background: url("Images/Logo.png");
+    background: url("media/Logo.png");
     background-position: center;
     background-size: cover;
 }
@@ -108,6 +109,9 @@
     height: 50%;
 }
 
+.treasure-box:hover{
+    transform: scale(.9)
+}
 
 .item{
     width: 75px;
@@ -175,7 +179,6 @@
     font-size: 1vw;
     margin-bottom: 2vh;
 }
-
 
 
 .bag-container{
@@ -293,6 +296,7 @@
     display: flex;
     justify-content: space-between;
     align-self:flex-end;
+    padding: 10px;
 }
 
 .bank-button:hover{

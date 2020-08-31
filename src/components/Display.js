@@ -12,6 +12,7 @@ class Display extends Component {
             bag: { gold: 0, inventory: [] },
         }
         this.getLoot = this.getLoot.bind(this)
+        this.addToBag = this.addToBag.bind(this)
         this.sellItem = this.sellItem.bind(this)
         this.useItem = this.useItem.bind(this)
     }
@@ -32,8 +33,8 @@ class Display extends Component {
         })
     }
 
-    addToBag() {
-        Axios.get('/api/loot').then((response) => {
+    addToBag(id) {
+        Axios.post('/api/bag', { id }).then((response) => {
             this.setState({
                 bag: response.data,
             })
@@ -64,6 +65,7 @@ class Display extends Component {
                 <Loot
                     loot={this.state.loot}
                     getLoot={this.getLoot}
+                    addToBag={this.addToBag}
                 />
                 <Bag
                     bag={this.state.bag}

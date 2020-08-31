@@ -1,12 +1,15 @@
-import React, { Component, cloneElement } from 'react'
-import Loot from './Loot'
-
+import React, { Component } from 'react'
 class Treasure extends Component {
     constructor() {
         super()
         this.state = {
 
         }
+    }
+
+    handleAddToBag() {
+        this.props.addToBag(this.props.loot.id)
+
     }
 
 
@@ -19,7 +22,7 @@ class Treasure extends Component {
                     <p className='treasure-price'>{this.props.loot.price}</p>
                 </section>
                 <section className='treasure-bottom'>
-                    <button onClick={() => this.props.getLoot()}>Get Loot</button>
+                    <img src="https://pngimg.com/uploads/treasure_chest/treasure_chest_PNG63.png" className="treasure-box" onClick={() => { this.props.getLoot(); this.handleAddToBag(); }} />
                 </section>
             </div >
         )

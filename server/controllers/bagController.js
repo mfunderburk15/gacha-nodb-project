@@ -20,22 +20,22 @@ module.exports = {
         } else {
             const treasure = loot.find((element) => element.id === id)
 
-            const { name, rating, durability, price, img } = treasure
+            const { name, rating, durability, price, img, max } = treasure
 
             treasure.BagId = bagId
 
-            bag.inventory.push({ id, name, rating, durability, price, img })
+            bag.inventory.push({ id, name, rating, durability, price, img, max })
 
         }
         bag.inventory.forEach((element, index) => {
-            element.bagId = index + 1
+            element.bagId = index
         })
 
         response.status(200).send(bag)
     },
     useItem: (request, response) => {
         const { bag_id } = request.params
-        const index = bag.inventory.findIndex((element) => element.bagId === (+bag_id + 1))
+        const index = bag.inventory.findIndex((element) => element.bagId === (+bag_id))
         console.log(bag.inventory.bagId)
         if (index === -1) {
             return response.status(404).send('Item is not in bag')
@@ -53,7 +53,7 @@ module.exports = {
     },
     sellItem: (request, response) => {
         const { bag_id } = request.params
-        const index = bag.inventory.findIndex((element) => element.bagId === (+bag_id + 1))
+        const index = bag.inventory.findIndex((element) => element.bagId === (+bag_id))
 
         if (index === -1) {
             return response.status(404).send('Item is not in bag')

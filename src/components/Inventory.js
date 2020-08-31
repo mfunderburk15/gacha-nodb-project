@@ -2,7 +2,6 @@ import React from 'react'
 
 const Inventory = (props) => {
     const { bagId } = props.data
-
     return (
         <section className="item">
             <img src={props.data.image} />
@@ -12,7 +11,6 @@ const Inventory = (props) => {
                 <button className='sell-item' onClick={() => props.sellItem(bagId)}>Sell</button>
                 <button className='use-item' onClick={() => props.useItem(bagId)}>Use</button>
                 <p className='durability'>{props.data.durability}/{props.data.max}</p>
-
             </div>
         </section>
     )

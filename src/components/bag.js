@@ -15,12 +15,14 @@ const Bag = (props) => {
                         data={element}
                     />
                 })}
-                <div className='gold'>
-                    Gold: {props.bag.gold}
+                <div className='economy-containter'>
+                    <div className='gold'>
+                        Gold: {props.bag.gold}
+                    </div>
+                    <button onClick={() => props.sendToBank()} className='bank-button'>
+                        Deposit
+                    </button>
                 </div>
-                <button onClick={() => props.sendToBank()} className='bank-button'>
-                    Deposit
-                </button>
             </div>
         </section>
     )
